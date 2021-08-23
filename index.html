@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"> 
   <title>Banco de currículo</title>
 </head>
 <body>
@@ -17,11 +17,12 @@
         <img src="assets/logo.png" alt="Logo Juliana Sorage">
       </div><!--logo-->
       <div class="menu">
-        <a href="#">Sobre</a>
+        <a href="#about">Sobre</a>
         <a href="#">Vagas</a>
         <a href="#">Contato</a>
+        <a href="#testimonials">Depoimentos</a>
         <a href="#">Login</a>
-        <a class="btn-menu" href="#">Cadastre CV</a>
+        <a class="btn-menu" href="cadastro.html">Cadastre CV</a>
       </div><!--menu-->
     </div><!--center--> 
   </header>
@@ -35,13 +36,7 @@
     </div><!--center-->
   </section><!--main-->
 
-  <div class="search-box">
-    <input type="Buscar Vagas" class= "search-txt" placeholder="Pesquisar">
-    <a href="#" class="search-btn">
-      <img src="simbolos/lupa.svg" alt="lupa" height="20" width="20">
-    </a>
-  </div>
-  
+ 
   <div class="vantagens"> 
     <div class="center">  
       <div class="vantagens-single">
@@ -51,7 +46,7 @@
       
       <div class="vantagens-single">
         <i class="fas fa-user"></i>
-        <p>Recebe vagas somente de acordo com o seu perfil</p>
+        <p>Recebe vagas que estejam somente de acordo com o seu perfil</p>
       </div><!--vantagens-single-->
       
       <div class="vantagens-single">
@@ -67,11 +62,10 @@
     
   </div>  
   
-  
   <section class="sobre">
     <div class="center">
       <div class="chamada-sobre">
-        <h2>Quem Somos</h2>
+        <h2 id="about">Quem Somos</h2>
         <p>
           Somos em todo Brasil uma das principais empresas de recrutamento e muito mais além.
           Como uma das empresas líderes de recrutamento, a missão da JobsNET é ligar pessoas e empresas
@@ -118,14 +112,14 @@
   </section><!--sobre-recolocação-->
   
   <section class="depoimentos">
+
+    <div class="depoimentos-chamada">
+      <h2 id="testimonials">Depoimentos</h2>
+      <p>Veja o que estão falando da JobsNET.</p>
+    </div>
+    
     <div class="center">
-      <div class="depoimentos-chamada">
-        <h2>Depoimentos</h2>
-        <p>Veja o que estão falando da JobsNET.</p>
-      </div>
-      
       <div class="carrousel">
-        
         <div class="carrousel-single">
           <div class="carrousel-single-box">
             <p>
@@ -154,18 +148,13 @@
           </div>
           <img src="assets/foto.c.jpeg">
           <p>Cleiton Benvenutti</p>
-        </div>
+        </div>      
         
-        
-      </div>
+      </div>     
       
-      
-    </div>
+    </div>   
     
-    
-  </section>
-  
-  
+  </section>  
   
   <script src="https://kit.fontawesome.com/16544f2866.js" crossorigin="anonymous"></script>
 </body>

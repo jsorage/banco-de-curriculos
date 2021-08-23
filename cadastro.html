@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="cadastro.css"> 
+  <title>Formulário de cadastro</title>
+</head>
+<body>
+  <div class="container">
+    <form action="#">      
+      <div class="title">DADOS PESSOAIS</div>
+      <div class="user-details">
+        <div class="input-box">
+          <span class="details">Nome Completo</span>
+          <input type="text" name="fullname" placeholder="Digite seu nome completo" required> 
+        </div>
+        
+        <div class="input-box">
+          <span class="details">Cargo Pretendido</span>
+          <input type="text" name="position" placeholder="Digite seu cargo pretendido" required> 
+        </div>
+        
+        <div class="input-box">
+          <span class="details">Data de Nascimento</span>
+          <input type="text" name="dob" placeholder="Digite a data de nascimento" required> 
+        </div>
+        
+        <div class="input-box">
+          <span class="details">Estado Civil</span>
+          <input type="text" name="marital_status" placeholder="Digite seu estado civil" required> 
+        </div>       
+        
+        <div class="input-box">
+          <span class="details">Endereço</span>
+          <input type="text" name="address" placeholder="Digite seu endereço completo" required> 
+        </div>
+        
+        <div class="input-box">
+          <span class="details">Bairro</span>
+          <input type="text" name="district" placeholder="Digite o nome do bairro" required> 
+        </div>
+        
+        <div class="input-box">
+          <span class="details">Cidade</span>
+          <input type="text" name="city" placeholder="Digite o nome da cidade" required> 
+        </div>
+        
+        
+        <div class="input-box">
+          <span class="details">Cep</span>
+          <input type="text" name="postal_code" placeholder="Digite seu cep" required> 
+        </div>
+        
+        <div class="input-box">
+          <span class="details">Telefone Fixo 1</span>
+          <input type="text" name="phone_nr1" placeholder="Digite um telefone para contato" required> 
+        </div>
+        
+        <div class="input-box">
+          <span class="details">Telefone Fixo 2</span>
+          <input type="text" name="phone_nr2" placeholder="Digite um telefone para contato" required> 
+        </div>
+        
+        <div class="input-box">
+          <span class="details">Celular</span>
+          <input type="text" name="celphone" placeholder="Digite um celular para contato" required> 
+        </div>
+        
+        <div class="input-box">
+          <span class="details">Contato</span>
+          <input type="text" name="contact" placeholder="Digite um nome para contato" required> 
+        </div> 
+        
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Sexo</span>
+          <div class="category">
+            <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="gender">Masculino</span>
+            </label>
+            
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">Feminino</span>
+            </label>
+            
+            <label for="dot-3">
+              <span class="dot three"></span>
+              <span class="gender">Prefiro não opinar</span>
+            </label>            
+          </div>
+        </div>
+        
+      </div><!-- user-details -->
+      
+      <section class="form-section">
+        <div class="title">DOCUMENTOS PESSOAIS</div>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Documento de Identidade</span>
+            <input type="text" name="doc_id" placeholder="Digite o documento de identificação" required> 
+          </div>  
+          
+          <div class="input-box">
+            <span class="details">CPF</span>
+            <input type="text" name="doc_ssn" placeholder="Digite o seu CPF" required> 
+          </div>  
+          
+          <div class="input-box">
+            <span class="details">Possui Veículo</span>
+            <input type="text" name="res_car" placeholder="Confirme se possui veículo próprio" required> 
+          </div> 
+          
+          <div class="input-box">
+            <span class="details">Habilitação</span>
+            <input type="text" name="drive_licence"placeholder="Categoria da habilitação" required> 
+          </div> 
+        </div>
+      </section>
+      
+      <div class="button">
+        <input type="submit" class="confirmacao" value="Confirmar Cadastro">
+      </div>
+      
+    </form>
+  </div>
+  
+  
+</body>
+</html>

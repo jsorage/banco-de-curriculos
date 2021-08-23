@@ -58,13 +58,16 @@ section.main {
   padding: 90px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position:  75% 25%;;
+  background-position:  0 25%;
 }
 
 .main__cta {
   width: 100%;
-  margin: 60px 0;
-  text-align: center;  
+  margin: 30px 0; 
+  padding: 30px 0;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
 }
 
 .main__cta h2 {
@@ -114,17 +117,6 @@ body {
   color: #f0f5fb;
 }
 
-.search-btn {
-  width: 25px;
-  height: 25px;
-  border-radius: 35%;
-  background: #6D9CED;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: .5s;
-}
-
 .search-box:hover > .search-txt {
   width: 240px;
   padding: 0 6px;
@@ -148,7 +140,7 @@ body {
   border: #3871BB 1px solid;
   padding: 10px;
   color: white;
-  background-image: linear-gradient(to top, rgb(81, 185, 226), #193c69);
+  background-image: linear-gradient(to top, rgb(81, 185, 226), #3871BB);
 }
 
 .vantagens-single i {
@@ -170,22 +162,23 @@ body {
 }
 
 section.sobre {
-  padding: 60px 0;
-  margin: 10px;
+  padding: 60px 15%;
+  margin: 30px;
 }
 
 .chamada-sobre {
   width: 100%;
   text-align: center;
+  color: #257acf;
 }
 
 .chamada-quemsomos h2 {
-  color: #121213;
+  color: #257acf;
 }
 
 .chamada-sobre p {
   font-size: 14px;
-  color: #3871BB;
+  color: #0b0b0c;
   margin: 10px 0;
 }
 
@@ -226,13 +219,13 @@ section.conquistas {
 }
 
 .sobre-recolocação-content h2 {
-  color: #3871BB;
+  color: #257acf;
   margin-bottom: 40px;
   font-size: 25px;
 }
 
 .sobre-recolocação-content p {
-  color: #262729;
+  color: #0b0b0c;
   font-size: 16px;
   margin-bottom: 14px;
 }
@@ -243,17 +236,20 @@ section.depoimentos {
 
 section.depoimentos .depoimentos-chamada {
   text-align: center;
+  margin-bottom: 30px;
  }
 
 .depoimentos-chamada h2 {
-  color: #101011;
-  font-size: 40px;
-  margin: 10px 0;
+  color: #257acf;
+  font-size: 25px;
+  margin-bottom: -5px;
 }
 
 .depoimentos-chamada p {
-  color: #8dbaf5;
-  margin: 10px 0;
+  color: #0b0b0c;
+  margin: 0;
+  font-weight: lighter;
+  font-size: 16px;
 }
 
 .carrousel {
