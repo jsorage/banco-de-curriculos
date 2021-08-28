@@ -14,7 +14,7 @@
   <div class="overlay">
 
     <div class="container">
-      <form action="#">      
+      <form action="https://banco-de-curriculos-api.herokuapp.com/users" method="POST">      
         <div class="title">DADOS PESSOAIS</div>
         <div class="user-details">
           <div class="input-box">
@@ -23,65 +23,60 @@
           </div>
           
           <div class="input-box">
-            <span class="details">Cargo Pretendido</span>
-            <input type="text" name="position" placeholder="Digite seu cargo pretendido" required> 
+            <span class="details">Profissão</span>
+            <input type="text" name="profession" placeholder="Digite seu cargo pretendido" required> 
           </div>
           
           <div class="input-box">
             <span class="details">Data de Nascimento</span>
-            <input type="text" name="dob" placeholder="Digite a data de nascimento" required> 
+            <input type="date" name="dob" placeholder="Digite a data de nascimento" required> 
           </div>
           
-          <div class="input-box">
+          <div class="input-box">        
             <span class="details">Estado Civil</span>
-            <input type="text" name="marital_status" placeholder="Digite seu estado civil" required> 
-          </div>       
-          
+            <input type="text" name="marital_status" placeholder="Digite o estado civil"> 
+          </div>     
+
           <div class="input-box">
-            <span class="details">Endereço</span>
-            <input type="text" name="address" placeholder="Digite seu endereço completo" required> 
+            <span class="details">Cep</span>
+            <input id="postal_code" type="text" name="postal_code" placeholder="Digite apenas numeros" required> 
+          </div>
+
+          <div class="input-box">
+            <span class="details">Logradouro</span>
+            <input id="address" type="text" name="address" placeholder="Digite seu endereço completo" required> 
           </div>
           
           <div class="input-box">
             <span class="details">Bairro</span>
-            <input type="text" name="district" placeholder="Digite o nome do bairro" required> 
+            <input id="district" type="text" name="district" placeholder="Digite o nome do bairro" required> 
           </div>
           
           <div class="input-box">
             <span class="details">Cidade</span>
-            <input type="text" name="city" placeholder="Digite o nome da cidade" required> 
-          </div>
-          
-          
-          <div class="input-box">
-            <span class="details">Cep</span>
-            <input type="text" name="postal_code" placeholder="Digite seu cep" required> 
+            <input id="city" type="text" name="city" placeholder="Digite o nome da cidade" required> 
           </div>
           
           <div class="input-box">
-            <span class="details">Telefone Fixo 1</span>
-            <input type="text" name="phone_nr1" placeholder="Digite um telefone para contato" required> 
-          </div>
-          
-          <div class="input-box">
-            <span class="details">Telefone Fixo 2</span>
-            <input type="text" name="phone_nr2" placeholder="Digite um telefone para contato" required> 
-          </div>
-          
+            <span class="details">Telefone Fixo</span>
+            <input type="text" name="phone_nr1" placeholder="Digite um telefone para contato"> 
+          </div>          
+               
           <div class="input-box">
             <span class="details">Celular</span>
             <input type="text" name="celphone" placeholder="Digite um celular para contato" required> 
           </div>
-          
+
           <div class="input-box">
-            <span class="details">Contato</span>
-            <input type="text" name="contact" placeholder="Digite um nome para contato" required> 
-          </div> 
-          
+            <span class="details">E-mail</span>
+            <input type="text" name="email" placeholder="Digite um email c para contato" required>
+          </div>
+
           <div class="gender-details">
-            <input type="radio" name="gender" id="dot-1">
-            <input type="radio" name="gender" id="dot-2">
-            <input type="radio" name="gender" id="dot-3">
+          
+            <input type="radio" name="gender" id="dot-1" value="m">
+            <input type="radio" name="gender" id="dot-2" value="f">
+            <input type="radio" name="gender" id="dot-3" value="-">       
             <span class="gender-title">Sexo</span>
             <div class="category">
               <label for="dot-1">
@@ -96,40 +91,40 @@
               
               <label for="dot-3">
                 <span class="dot three"></span>
-                <span class="gender">Prefiro não opinar</span>
+                <span class="gender">Outro</span>
               </label>            
             </div>
-          </div>
-          
-        </div><!-- user-details -->
+          </div>                    
+        </div>
+        <!-- user-details -->
         
         <section class="form-section">
           <div class="title">DOCUMENTOS PESSOAIS</div>
           <div class="user-details">
-            <div class="input-box">
+            <div class="input-box"> 
               <span class="details">Documento de Identidade</span>
-              <input type="text" name="doc_id" placeholder="Digite o documento de identificação" required> 
+              <input type="text" name="doc_id" placeholder="Digite o documento de identificação"> 
             </div>  
             
             <div class="input-box">
               <span class="details">CPF</span>
-              <input type="text" name="doc_ssn" placeholder="Digite o seu CPF" required> 
+              <input id="doc_ssn" type="text" name="doc_ssn" placeholder="Digite o seu CPF" required> 
             </div>  
             
             <div class="input-box">
               <span class="details">Possui Veículo</span>
-              <input type="text" name="res_car" placeholder="Confirme se possui veículo próprio" required> 
+              <input type="text" name="res_car" placeholder="Confirme se possui veículo próprio"> 
             </div> 
             
             <div class="input-box">
               <span class="details">Habilitação</span>
-              <input type="text" name="drive_licence"placeholder="Categoria da habilitação" required> 
+              <input type="text" name="drive_licence"placeholder="Categoria da habilitação"> 
             </div> 
           </div>
         </section>
         
         <div class="button">
-          <input type="submit" class="confirmacao" value="Confirmar Cadastro">
+          <input type="submit" class="registro" value="Confirmar Cadastro">
         </div>
         
       </form>
@@ -137,5 +132,6 @@
     
   </div>
   
+  <script src="postal_code.js"></script>
 </body>
 </html>
