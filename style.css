@@ -183,7 +183,7 @@ section.sobre {
 }
 
 section.conquistas {
- background: #193c69;
+ background: #0f5abd;
   padding:20px 0;
 }
 
@@ -287,6 +287,16 @@ section.depoimentos .depoimentos-chamada {
   margin: 10px 0;
   border-radius: 50%;
 }
+
+footer {
+  font-style: italic;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: #8dbaf5;
+  border-top: 4px solid rgb(27, 29, 182);
+}
+
 
 @media screen and (max-width: 768px){
   .vantagens-sigle {

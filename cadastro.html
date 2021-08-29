@@ -11,7 +11,14 @@
   <title>Formulário de cadastro</title>
 </head>
 <body>
+   
   <div class="overlay">
+
+    <a href="index.html"class="previous">Página Inicial</a> 
+    
+      <div class="formulário">
+        <h2>Formulário para Cadastro de Currículos</h2> 
+      </div>
 
     <div class="container">
       <form action="https://banco-de-curriculos-api.herokuapp.com/users" method="POST">      
@@ -34,7 +41,7 @@
           
           <div class="input-box">        
             <span class="details">Estado Civil</span>
-            <input type="text" name="marital_status" placeholder="Digite o estado civil"> 
+            <input type="text" name="marital_status" placeholder="Solteiro, casado, divorciado ou viúvo"> 
           </div>     
 
           <div class="input-box">
@@ -44,7 +51,7 @@
 
           <div class="input-box">
             <span class="details">Logradouro</span>
-            <input id="address" type="text" name="address" placeholder="Digite seu endereço completo" required> 
+            <input id="address" type="text" name="address" placeholder="Rua, n°, complemento" required> 
           </div>
           
           <div class="input-box">
@@ -59,42 +66,39 @@
           
           <div class="input-box">
             <span class="details">Telefone Fixo</span>
-            <input type="text" name="phone_nr1" placeholder="Digite um telefone para contato"> 
+            <input type="text" name="phone_nr1" placeholder="(00) 0000 0000"> 
           </div>          
                
           <div class="input-box">
             <span class="details">Celular</span>
-            <input type="text" name="celphone" placeholder="Digite um celular para contato" required> 
+            <input type="text" name="celphone" placeholder="(00) 00000 0000" required> 
           </div>
 
           <div class="input-box">
             <span class="details">E-mail</span>
-            <input type="text" name="email" placeholder="Digite um email c para contato" required>
+            <input type="text" name="email" placeholder="meuemail@exemplo.com" required>
           </div>
 
-          <div class="gender-details">
-          
-            <input type="radio" name="gender" id="dot-1" value="m">
-            <input type="radio" name="gender" id="dot-2" value="f">
-            <input type="radio" name="gender" id="dot-3" value="-">       
-            <span class="gender-title">Sexo</span>
-            <div class="category">
-              <label for="dot-1">
-                <span class="dot one"></span>
-                <span class="gender">Masculino</span>
-              </label>
-              
-              <label for="dot-2">
-                <span class="dot two"></span>
-                <span class="gender">Feminino</span>
-              </label>
-              
-              <label for="dot-3">
-                <span class="dot three"></span>
-                <span class="gender">Outro</span>
-              </label>            
-            </div>
-          </div>                    
+          <div class="input-box">
+            <fieldset>
+              <legend class="details">Sexo</legend>
+              <div class="radio-options">
+                <div class="radio-option">
+                  <input type="radio" name="gender" id="sex-m" value="m">
+                  <label for="sex-m">Masculino</label>
+                </div>
+                <div class="radio-option">
+                  <input type="radio" name="gender" id="sex-f" value="f">
+                  <label for="sex-f">Feminino</label>
+                </div>
+                <div class="radio-option">
+                  <input type="radio" name="gender" id="sex-none" value="-">
+                  <label for="sex-none">Outro</label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+                          
         </div>
         <!-- user-details -->
         
@@ -103,24 +107,46 @@
           <div class="user-details">
             <div class="input-box"> 
               <span class="details">Documento de Identidade</span>
-              <input type="text" name="doc_id" placeholder="Digite o documento de identificação"> 
+              <input type="text" name="doc_id" placeholder="Digite apenas numeros"> 
             </div>  
             
             <div class="input-box">
               <span class="details">CPF</span>
-              <input id="doc_ssn" type="text" name="doc_ssn" placeholder="Digite o seu CPF" required> 
+              <input id="doc_ssn" type="text" name="doc_ssn" placeholder="Digite apenas numeros" required> 
             </div>  
-            
-            <div class="input-box">
-              <span class="details">Possui Veículo</span>
-              <input type="text" name="res_car" placeholder="Confirme se possui veículo próprio"> 
-            </div> 
-            
-            <div class="input-box">
-              <span class="details">Habilitação</span>
-              <input type="text" name="drive_licence"placeholder="Categoria da habilitação"> 
-            </div> 
+
+          <div class="input-box">
+            <fieldset>   
+              <legend class="details">Possui veículo próprio</legend>
+              <div class="radio-options">
+                <div class="radio-option">  
+                  <input type="radio" name="res_car" id="car-yes" value="sim">
+                  <label for="car-yes">sim</label>
+                </div> 
+                <div class="radio-otption">    
+                  <input type="radio" name="res_car" id="car-no" value="não">
+                  <label for="car-no">não</label>
+                </div>
+              </div> 
+            </fieldset> 
+          </div>         
+
+          <div class="input-box">     
+            <fieldset>
+              <legend class="details">Possui habilitação</legend>
+              <div class="radio-options"> 
+                <div class="radio-option">       
+                  <input type="radio" name="drive_licence" id="lic-yes" value="sim">
+                  <label for="lic-yes">sim</label>
+                </div>
+                <div class="radio-option"> 
+                  <input type="radio" name="drive_licence" id="lic-no" value="não">
+                  <label for="lic-no">não</label>
+                </div>   
+              </div>       
+            </fieldset>
           </div>
+
         </section>
         
         <div class="button">
