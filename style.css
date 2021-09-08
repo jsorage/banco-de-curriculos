@@ -294,9 +294,9 @@ footer {
   justify-content: space-evenly;
   padding: 2rem;
   background: #8dbaf5;
+  font-size: 12px;
   border-top: 4px solid rgb(27, 29, 182);
 }
-
 
 @media screen and (max-width: 768px){
   .vantagens-sigle {
